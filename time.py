@@ -1,4 +1,4 @@
-import RoboPiLip as RPL
+import RoboPiLib as RPL
 import time
 
 RPL.RoboPiInit("/dev/ttyAMA0",115200)
@@ -23,7 +23,7 @@ while True:
     
   elif readingL == 0:
      RPL.servoWrite(motorR, 0)
-     RPL.servoWrite(motorL, 1600)
+     RPL.servoWrite(motorL, 0)
      time.sleep(1)
      RPL.servoWrite(motorL, 0)
      time.sleep(1)
