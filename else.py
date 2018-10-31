@@ -1,4 +1,4 @@
-import RoboPiLip as RPL
+import RoboPiLib as RPL
 import time
 
 RPL.RoboPiInit("/dev/ttyAMA0",115200)
@@ -11,7 +11,7 @@ sensorS = 16
 
 while True:
   readingF = digitalRead(sensorF)
-  if reading F == 1:
+  if readingF == 1:
      RPL.servoWrite(motorR, 1600)
   else:
      RPL.servoWrite(motorR, 1400)
