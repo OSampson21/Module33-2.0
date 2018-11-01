@@ -2,7 +2,7 @@ import RoboPiLib as RPL
 import time
 
 RPL.RoboPiInit("/dev/ttyAMA0",115200)
-list = [1,2,3]
+
 motorR = 0
 motorL = 1
 speedR = 1400
@@ -17,7 +17,7 @@ while True:
        if speed < 1501:
           return 1501
     speedR -= 10
-       if speed < 1:
+       if speedR < 1:
           return 1
     RPL.servowrite(motorL, speedL)
     RPL.servoWrite(motorR, speedR)
