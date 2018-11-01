@@ -10,7 +10,7 @@ sensorS = 16
 n = 0
 
 while True:
-  if RPL.digitalRead(sensorF) == 1:
+  if RPL.digitalRead(sensorF) == 0:
      RPL.servoWrite(motorR, 1600)
      time.sleep(1)
      RPL.servoWrite(motorR, 0)
