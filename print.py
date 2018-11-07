@@ -16,6 +16,6 @@ while True:
      RPL.servoWrite(motorR, 0)
      time.sleep(1)
      n += 1
-     print("The motor has pulsed " + n + " times.")
-   else:
+     print("The motor has pulsed " + str(n) + " times.")
+  else:
      pass

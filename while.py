@@ -10,7 +10,7 @@ sensorF = 17
 sensorL = 16
 
 while True:
-  readingF = RPL.digitalRead(senorF)
+  readingF = RPL.digitalRead(sensorF)
   trim = time.time() - theB
   if trim > 20:
      break
@@ -18,7 +18,7 @@ while True:
      for number in list:
         RPL.servoWrite(motorR, 1600)
         time.sleep(1.5)
-        RPL.servowrite(motorR, 0)
+        RPL.servoWrite(motorR, 0)
         time.sleep(1.5)
   else:
      RPL.servoWrite(motorR, 0) 

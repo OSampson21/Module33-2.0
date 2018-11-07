@@ -8,12 +8,12 @@ sensorF = 17
 
 
 while True:
-  readingF = RPL.digitalRead(senorF)
+  readingF = RPL.digitalRead(sensorF)
   if readingF == 0:
-     for i in range(1,3):
+     for i in range(0,3):
         RPL.servoWrite(motorR, 1600)
         time.sleep(1.5)
-        RPL.servowrite(motorR, 0)
+        RPL.servoWrite(motorR, 0)
         time.sleep(1.5)
   else:
      break

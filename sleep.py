@@ -10,7 +10,7 @@ sensorF = 17
 sensorL = 16
 
 while True:
-  readingF = RPL.digitalRead(senorF)
+  readingF = RPL.digitalRead(sensorF)
   readingL = RPL.digitalRead(sensorL)
   if readingL == 0:
      RPL.servoWrite(motorL, 1600)
